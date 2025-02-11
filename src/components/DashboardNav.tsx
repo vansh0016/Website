@@ -57,7 +57,7 @@ export const DashboardNav = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold text-white w-1/4">
-            VANSH SETPAL
+            VANSH A SETPAL
           </div>
           <div className="flex-grow"></div>
           <div className="flex gap-4 w-3/4 justify-end">
