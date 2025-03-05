@@ -15,7 +15,7 @@ const projects = {
     description: "A statistical modeling solution built with R, utilizing regression analysis and time-series forecasting to optimize inventory levels, reduce logistics costs and improve demand prediction accuracy.",
     fullDescription: "Cleaned and preprocessed large datasets to ensure data quality, consistency, and accuracy, laying a solid foundation for reliable model development. Designed and implemented predictive models using Multiple Linear Regression, Random Forest, Decision Trees, and Logistic Regression to forecast critical supply chain metrics, including insurance costs, freight costs, and optimal transportation modes. These models incorporated key variables such as manufacturing site locations, delivery destinations, and operational constraints, enabling precise predictions and better logistical planning. Leveraged statistical techniques to optimize delivery routes and transportation methods, leading to a 15% reduction in overall logistics expenses. Conducted sensitivity analysis to identify the impact of different variables on model performance, enabling data-driven decision-making and improving robustness. Employed backward subset selection for feature optimization, significantly enhancing model accuracy to 94%, which provided actionable insights to streamline supply chain operations.",
     image: "/SPA.png",
-    githubUrl: "https://github.com/vansh0016",
+    githubUrl: "https://github.com/vansh0016/supplychain",
   },
   "3": {
     title: "Automated Stock Trading System Using AI Agents",
@@ -36,14 +36,14 @@ const projects = {
     description: "A machine learning solution built with Python and XGBoost, analyzing voice parameter datasets to predict Parkinson's risk, enabling early diagnosis and intervention.",
     fullDescription: "In the Prediction of Parkinson’s Disease project, I focused on developing a machine learning model to predict the likelihood of Parkinson’s disease based on voice parameters of patients. I conducted extensive data cleaning, feature engineering and model selection to ensure accurate predictions. By analyzing key vocal features such as pitch, jitter and shimmer, I was able to identify patterns indicative of Parkinson’s disease. Utilizing algorithms like Support Vector Machines (SVM) and Random Forest, the model was trained to recognize these patterns and provide reliable predictions. The project also involved evaluating the model’s performance using metrics such as accuracy, precision and recall. This helped in refining the model for better predictive capabilities. This work significantly enhanced my expertise in data analysis, machine learning and healthcare informatics, contributing to the early detection and treatment of Parkinson’s disease.",
     image: "/PD.png",
-    githubUrl: "https://github.com/vansh0016",
+    githubUrl: "https://github.com/vansh0016/parkprediction",
   },
   "6": {
     title: "Optimizing Insurance Claims Management with Predictive Modeling and Sentiment Analysis",
     description: "An ML model built with Python, to predict claim outcomes and identify dispute patterns",
     fullDescription: "This project aimed to make insurance claims management smarter and more efficient by using advanced machine learning techniques and natural language processing (NLP). A predictive model, built primarily with Random Forest, was designed to forecast important claim outcomes like resolution times, claim amounts, and denial probabilities. By incorporating sentiment analysis, the project also analyzed claim descriptions to identify patterns linked to delays and disputes, offering a deeper understanding of the factors driving these outcomes. Through detailed multivariate analysis, the project uncovered valuable insights into how variables like coverage types and claim details impact results. By using optimization techniques, such as feature selection, the model achieved impressive accuracy with an R-squared value of 0.82 and a Mean Squared Error of 0.199, proving its ability to deliver reliable predictions. The research provides practical solutions for insurance companies to streamline their claims processes, reduce delays, and improve customer satisfaction. It highlights how data-driven approaches can transform traditional claims management, making it faster, more accurate, and customer-focused.",
     image: "/IC.png",
-    githubUrl: "https://github.com/vansh0016",
+    githubUrl: "https://github.com/vansh0016/insuranceclaims",
   },
 };
 
