@@ -117,7 +117,7 @@ const Index = () => {
               <p className="text-lg text-gray-300 mb-8">
                 Hi, I’m Vansh.
                 A researcher who is passionate about developing data-driven and intelligent systems that bridge theory and real-world impact. 
-                My work spans quantitative modeling, reinforcement learning and natural language processing, with a focus on building robust and interpretable AI frameworks. 
+                My work spans across quantitative modeling, reinforcement learning and natural language processing, with a focus on building robust and practical frameworks for real-world production environments.
                 I am deeply interested in advancing research at the intersection of machine learning, optimization and decision intelligence to solve complex, high-dimensional problems.
               </p>
               <div className="flex space-x-4">
