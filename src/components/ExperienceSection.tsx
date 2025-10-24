@@ -21,7 +21,7 @@ const education: Education[] = [
     period: "August 2024 - May 2026",
   },
   {
-    title: "B.E. Electronics and Data Science",
+    title: "Bachelor of Engineering - Major: Electronics / Minor: Data Science",
     company: "University Of Mumbai",
     period: "July 2020 - May 2024",
   },
@@ -29,18 +29,32 @@ const education: Education[] = [
 
 const experiences: Experience[] = [
   {
+    title: "Graduate Research Assistant",
+    company: "George Mason University",
+    period: "March 2025 - Present",
+    description: "Currently working under the guidance of Dr. Duoduo Liao, developing deep learning frameworks for structural health monitoring and exploring multimodal fusion approaches to advance predictive maintenance in non-destructive evaluation methods.",
+    skills: [],
+  },
+  {
+    title: "Applied AI Engineer Intern",
+    company: "Alchemus",
+    period: "May 2025 - August 2025",
+    description: "Designed and deployed agentic AI pipelines with modular micro-agents, built scalable RESTful APIs and optimized prompt engineering workflows to enhance automation and system reliability.",
+    skills: [],
+  },
+  {
     title: "Data Analyst Intern",
     company: "Global EduTrails",
     period: "November 2022 - April 2023",
-    description: "Utilized Python for data cleaning, implemented SVR and Prophet for travel demand forecasting, which increased sales by 70% and identified a new customer base, created visual reports with Tableau and Matplotlib, and collaborated with management to enhance strategic planning.",
-    skills: ["Python", "Machine Learning", "Data Visualization", "Tableau", "Matplotlib", "Forecasting", "Strategic Planning", "Excel"],
+    description: "Built forecasting models to support data-driven pricing strategies and developed interactive dashboards that enhanced business decision-making.",
+    skills: [],
   },
   {
     title: "Quality Assurance Tester",
     company: "Pravin Electronics",
     period: "November 2022 - April 2023",
-    description:"Executed bench/test setups to verify device performance, increasing testing efficiency by 90%, analyzed specifications and data sheets to enhance product compliance and performance, and prepared detailed documentation that improved client satisfaction and understanding.",
-    skills: ["Testing & Validation", "Performance Analysis", "Compliance Assessment", "Technical Documentation", "Excel", "Data Interpretation", "Quality Assurance"],
+    description:"Executed bench/test setups to verify device performance, analyzed specifications and data sheets to enhance product compliance and performance, and prepared detailed documentation that improved client satisfaction and understanding.",
+    skills: [],
   },
 ];
 
@@ -52,8 +66,8 @@ export const ExperienceSection = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(25,118,210,0.1)_0%,transparent_70%)] pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-12 text-white text-center">
-            Journey
-            <span className="block mt-2 text-lg font-normal text-blue-300">Where Skills Meet Impact</span>
+            Education & Experience
+            <span className="block mt-2 text-lg font-normal text-blue-300"></span>
           </h2>
           <div className="space-y-8 max-w-4xl mx-auto">
             {education.map((edu, index) => (

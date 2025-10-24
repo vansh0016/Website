@@ -1,6 +1,7 @@
 import { DashboardNav } from "@/components/DashboardNav";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ExperienceSection } from "@/components/ExperienceSection";
+import { PublicationsSection } from "@/components/PublicationsSection";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { Button } from "@/components/ui/button";
@@ -12,36 +13,48 @@ const Index = () => {
   const projects = [
     {
       id: "1",
-      title: "Economic Recession Analysis",
-      description: "A data-driven economic recession prediction system built with Python, leveraging machine learning models.",
-      image: "/econrec.png",
+      title: "RL-Based Latent Regime Modeling using β-VAE & GMM",
+      description: "An RL-based signal which dynamically infers latent market regimes by optimizing actions through reinforcement learning, allowing the agent to adapt trading strategies and risk exposure as the underlying market structure evolves.",
+      image: "/BT.png",
     },
     {
       id: "2",
+      title: "Parameter-efficient Tuning of Flan-T5",
+      description: "Fine-tuned the Flan-T5 Large model using QLoRA for efficient event extraction on noisy real-world text, improving robustness and reducing computational overhead through parameter-efficient training.",
+      image: "/parameter.png",
+    },
+    {
+      id: "3",
+      title: "Universal Document-Level Information Extraction",
+      description: "A document-level information extraction system using Graph Convolutional Networks and meta-learning to perform cross-domain entity and relation extraction, improving generalization and accuracy on unseen domains.",
+      image: "/DocIE.png",
+    },
+    {
+      id: "4",
+      title: "Options Pricing` and Hedging Strategies",
+      description: "Developed an options pricing and hedging framework using Black-Scholes and Binomial models with Monte Carlo simulations to model stochastic price dynamics and evaluate risk mitigation strategies across market regimes.",
+      image: "/pricing.png",
+    },
+    {
+      id: "5",
       title: "Supply Chain Analytics Using Statistical Methods",
       description: "A statistical modeling solution built with R, utilizing regression analysis and time-series forecasting to optimize inventory levels, reduce logistics costs and improve demand prediction accuracy.",
       image: "/SPA.png",
     },
     {
-      id: "3",
-      title: "Automated Stock Trading System Using AI Agents",
-      description: "An AI-driven trading platform built with Python, leveraging agent-based architecture and SMA technical indicators to execute data-driven buy/sell signals, achieving 14% annualized returns while maintaining risk-managed portfolios.",
-      image: "/BT.png",
-    },
-    {
-      id: "4",
+      id: "6",
       title: "Financial Performance Analysis for Revenue Optimization",
       description: "A data-driven solution built with Excel and Power BI, automating financial data processing and leveraging interactive dashboards to optimize revenue streams and identify cost-saving opportunities.",
       image: "/FA.png",
     },
     {
-      id: "5",
+      id: "7",
       title: "Prediction Of Parkinson's Disease using Machine Learning",
       description: "A machine learning solution built with Python and XGBoost, analyzing voice parameter datasets to predict Parkinson's risk, enabling early diagnosis and intervention.",
       image: "/PD.png",
     },
     {
-      id: "6",
+      id: "8",
       title: "Optimizing Insurance Claims Management with Predictive Modeling and Sentiment Analysis",
       description: "An ML model built with Python, to predict claim outcomes and identify dispute patterns",
       image: "/IC.png",
@@ -76,9 +89,9 @@ const Index = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl font-bold mb-6 text-white">Welcome to My Portfolio</h1>
+            <h1 className="text-5xl font-bold mb-6 text-white">Hi, and welcome to my corner of the internet.</h1>
             <p className="text-xl text-gray-300">
-              Turning Data into Decisions, One Insight at a Time.
+              I explore patterns, train models and make data do cool things.
             </p>
           </div>
           {/* <div className="w-100 h-100 mt-8 flex justify-center items-center">
@@ -95,17 +108,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
             <div className="relative rounded-lg overflow-hidden">
               <img
-                src="/IMG_4953-rm.png"
+                src="/IMG_8750.png"
                 alt="Professional headshot"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
             </div>
             <div>
               <p className="text-lg text-gray-300 mb-8">
-                A data analytics engineer passionate about uncovering insights that drive smarter decisions. 
-                With experience in visualization, NLP and financial markets, I translate complex data into actionable strategies. 
-                My work blends analytics, storytelling, and problem-solving to create real-world impact.
-                I transform data into insights, turning complexity into clarity and action.
+                Hi, I’m Vansh.
+                A researcher who is passionate about developing data-driven and intelligent systems that bridge theory and real-world impact. 
+                My work spans quantitative modeling, reinforcement learning and natural language processing, with a focus on building robust and interpretable AI frameworks. 
+                I am deeply interested in advancing research at the intersection of machine learning, optimization and decision intelligence to solve complex, high-dimensional problems.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -151,9 +164,11 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+    </section>
 
-      <section id="contact" className="min-h-screen py-16 bg-[rgb(18,24,56)] relative">
+    <PublicationsSection />
+
+  <section id="contact" className="min-h-screen py-16 bg-[rgb(18,24,56)] relative">
         <div className="absolute inset-0 bg-fixed" style={{ backgroundImage: 'url("/path-to-your-background.jpg")', opacity: 0.1 }}></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-white">Contact Me</h2>
@@ -196,6 +211,25 @@ const Index = () => {
                 Send Message
               </Button>
             </form>
+          </div>
+          {/* Social links after contact form */}
+          <div className="mt-8 flex justify-center gap-6">
+            <a
+              href="https://www.linkedin.com/in/vanshsetpal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="mailto:vsetpal@gmu.edu"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </section>

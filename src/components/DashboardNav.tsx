@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Home, User, Briefcase, Mail, Clock, Menu } from "lucide-react";
+import { Home, User, Briefcase, Mail, Clock, Menu, FileText } from "lucide-react";
 
 interface NavPanelProps {
   icon: React.ReactNode;
@@ -27,7 +27,7 @@ export const DashboardNav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "experience", "projects", "contact"];
+      const sections = ["home", "about", "experience", "projects", "publications", "contact"];
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -90,6 +90,12 @@ export const DashboardNav = () => {
             isActive={activeSection === "projects"}
           />
           <NavPanel
+            icon={<FileText className="w-5 h-5" />}
+            title="Publications"
+            onClick={() => scrollToSection("publications")}
+            isActive={activeSection === "publications"}
+          />
+          <NavPanel
             icon={<Mail className="w-5 h-5" />}
             title="Contact"
             onClick={() => scrollToSection("contact")}
@@ -134,6 +140,12 @@ export const DashboardNav = () => {
             title="Projects"
             onClick={() => scrollToSection("projects")}
             isActive={activeSection === "projects"}
+          />
+          <NavPanel
+            icon={<FileText className="w-5 h-5" />}
+            title="Publications"
+            onClick={() => scrollToSection("publications")}
+            isActive={activeSection === "publications"}
           />
           <NavPanel
             icon={<Mail className="w-5 h-5" />}
